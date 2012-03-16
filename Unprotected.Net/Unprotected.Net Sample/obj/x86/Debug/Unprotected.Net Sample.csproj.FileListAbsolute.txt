@@ -1,0 +1,8 @@
+C:\Repo\Unprotected.Net\Unprotected.Net\Unprotected.Net Sample\bin\Debug\Unprotected.Net Sample.exe.config
+C:\Repo\Unprotected.Net\Unprotected.Net\Unprotected.Net Sample\bin\Debug\Unprotected.Net Sample.exe
+C:\Repo\Unprotected.Net\Unprotected.Net\Unprotected.Net Sample\bin\Debug\Unprotected.Net Sample.pdb
+C:\Repo\Unprotected.Net\Unprotected.Net\Unprotected.Net Sample\bin\Debug\Unprotected.Net.dll
+C:\Repo\Unprotected.Net\Unprotected.Net\Unprotected.Net Sample\bin\Debug\Unprotected.Net.pdb
+C:\Repo\Unprotected.Net\Unprotected.Net\Unprotected.Net Sample\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Repo\Unprotected.Net\Unprotected.Net\Unprotected.Net Sample\obj\x86\Debug\Unprotected.Net Sample.exe
+C:\Repo\Unprotected.Net\Unprotected.Net\Unprotected.Net Sample\obj\x86\Debug\Unprotected.Net Sample.pdb

@@ -1,0 +1,5 @@
+C:\Repo\Unprotected.Net\Unprotected.Net\Unprotected.Net\bin\Debug\Unprotected.Net.dll
+C:\Repo\Unprotected.Net\Unprotected.Net\Unprotected.Net\bin\Debug\Unprotected.Net.pdb
+C:\Repo\Unprotected.Net\Unprotected.Net\Unprotected.Net\obj\Debug\ResolveAssemblyReference.cache
+C:\Repo\Unprotected.Net\Unprotected.Net\Unprotected.Net\obj\Debug\Unprotected.Net.dll
+C:\Repo\Unprotected.Net\Unprotected.Net\Unprotected.Net\obj\Debug\Unprotected.Net.pdb

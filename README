@@ -1,1 +1,4 @@
-Open the solution and take a look at the example
+Open the solution and take a look at the example.
+
+PrivateMemberExposer:
+    The PrivateMemberExposer is an object that extends private members to expose them publicly.

@@ -1,3 +1,3 @@
 *.bak
-/bin*
-/obj*
+bin*
+obj*

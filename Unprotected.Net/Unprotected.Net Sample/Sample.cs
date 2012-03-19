@@ -11,6 +11,7 @@ namespace Unprotected.Net_Sample
             var foo = new Foo();
             Console.WriteLine("MyPublicString before alteration: {0}", foo.MyPublicString);
             Console.WriteLine("GetMyPrivateString before alteration: {0}", foo.GetMyPrivateString);
+            Console.WriteLine("GetMyPrivateStringField before alteration: {0}", foo.GetMyPrivateStringField);
             Console.WriteLine("GetMyPrivateInt before alteration: {0}", foo.GetMyPrivateInt);
             Console.WriteLine();
 
@@ -19,9 +20,11 @@ namespace Unprotected.Net_Sample
             exposer.MyPublicString = "Altered public string";
             exposer.MyPrivateString = "Altered private string";
             exposer.MyPrivateInt = 5555;
+            exposer.MyPrivateStringField = "Altered string field";
 
             Console.WriteLine("After public string alteration: {0}", foo.MyPublicString);
             Console.WriteLine("After private string alteration: {0}", foo.GetMyPrivateString);
+            Console.WriteLine("GetMyPrivateStringField before alteration: {0}", foo.GetMyPrivateStringField);
             Console.WriteLine("After private int alteration: {0}", foo.GetMyPrivateInt);
             Console.WriteLine();
 
@@ -38,6 +41,7 @@ namespace Unprotected.Net_Sample
     {
         public string MyPublicString { get; set; }
         private string MyPrivateString { get; set; }
+        private string MyPrivateStringField = "Default field string value";
 
         private int MyPrivateInt { get; set; }
 
@@ -52,6 +56,7 @@ namespace Unprotected.Net_Sample
         }
 
         public string GetMyPrivateString { get { return MyPrivateString; } }
+        public string GetMyPrivateStringField { get { return MyPrivateStringField; } }
         public int GetMyPrivateInt { get { return MyPrivateInt; } }
 
         public Foo()

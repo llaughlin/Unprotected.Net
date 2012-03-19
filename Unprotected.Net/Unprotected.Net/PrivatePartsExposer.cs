@@ -44,4 +44,12 @@
             return false;
         }
     }
+
+    public static class ExposerExtensions
+    {
+        public static PrivatePartsExposer<T> ExposePrivateParts<T>(this T source)
+        {
+            return new PrivatePartsExposer<T>(source);
+        }
+    }
 }

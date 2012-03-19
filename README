@@ -1,4 +1,7 @@
+Unprotected.Net is a library that gives access to private, protected, and internal members of objects. Its primary purpose is for unit-testing scenarios, but can be used in many other ways.
+
 Open the solution and take a look at the sample.
 
 PrivateMemberExposer:
     The PrivateMemberExposer is an object that extends private members to expose them publicly.
+

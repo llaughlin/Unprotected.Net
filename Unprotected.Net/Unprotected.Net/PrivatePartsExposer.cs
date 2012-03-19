@@ -1,5 +1,6 @@
 ﻿namespace Unprotected.Net
 {
+    using System;
     using System.Collections.Generic;
     using System.Dynamic;
     using System.Linq;
@@ -8,6 +9,7 @@
 
     public class PrivatePartsExposer<T> : DynamicObject
     {
+        private readonly Type _type;
         private Dictionary<string, PropertyInfo> Properties { get; set; }
 
         private Dictionary<string, FieldInfo> Fields { get; set; }
@@ -17,12 +19,12 @@
         public PrivatePartsExposer(T source)
         {
             Source = source;
-            var type = typeof(T);
-            Properties = type.GetProperties()
-                .Union(type.GetProperties(BindingFlags.NonPublic | BindingFlags.Instance))
+            _type = typeof(T);
+            Properties = _type.GetProperties()
+                .Union(_type.GetProperties(BindingFlags.NonPublic | BindingFlags.Instance))
                 .ToDictionary(pi => pi.Name);
-            Fields = type.GetFields()
-                .Union(type.GetFields(BindingFlags.NonPublic | BindingFlags.Instance))
+            Fields = _type.GetFields()
+                .Union(_type.GetFields(BindingFlags.NonPublic | BindingFlags.Instance))
                 .ToDictionary(fi => fi.Name);
         }
 
@@ -60,6 +62,8 @@
             }
             return false;
         }
+
+
     }
 
     public static class ExposerExtensions

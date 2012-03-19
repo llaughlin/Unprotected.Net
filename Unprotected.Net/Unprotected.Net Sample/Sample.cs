@@ -30,6 +30,7 @@ namespace Unprotected.Net_Sample
 
             Console.WriteLine("Value of private string getter: {0}", exposer.MyPrivateStringGetter);
             Console.WriteLine("Value of private int getter: {0}", exposer.MyPrivateIntGetter);
+            Console.WriteLine("Value of private method: {0}", exposer.GetPrivateStringMethod());
             Console.WriteLine();
 
             Console.WriteLine("Press any key to continue...");
@@ -53,6 +54,11 @@ namespace Unprotected.Net_Sample
         private int MyPrivateIntGetter
         {
             get { return 9999; }
+        }
+
+        private string GetPrivateStringMethod()
+        {
+            return "This is a private method.";
         }
 
         public string GetMyPrivateString { get { return MyPrivateString; } }

@@ -39,12 +39,12 @@
             PropertyInfo property;
             FieldInfo field;
             result = null;
-            if (Fields.TryGetValue(binder.Name, out field))
+            if(Fields.TryGetValue(binder.Name, out field))
             {
                 result = field.GetValue(Source);
                 return true;
             }
-            if (Properties.TryGetValue(binder.Name, out property))
+            if(Properties.TryGetValue(binder.Name, out property))
             {
                 result = property.GetValue(Source, null);
                 return true;
@@ -56,12 +56,12 @@
         {
             PropertyInfo property;
             FieldInfo field;
-            if (Fields.TryGetValue(binder.Name, out field))
+            if(Fields.TryGetValue(binder.Name, out field))
             {
                 field.SetValue(Source, value);
                 return true;
             }
-            if (Properties.TryGetValue(binder.Name, out property))
+            if(Properties.TryGetValue(binder.Name, out property))
             {
                 property.SetValue(Source, value, null);
                 return true;
@@ -73,7 +73,7 @@
         {
             result = null;
             MethodInfo method;
-            if (Methods.TryGetValue(binder.Name, out method))
+            if(Methods.TryGetValue(binder.Name, out method))
             {
                 const BindingFlags flags = NonPublicInstanceflags | BindingFlags.Public | BindingFlags.InvokeMethod;
                 result = method.Invoke(Source, flags, Type.DefaultBinder, args, CultureInfo.CurrentCulture);
